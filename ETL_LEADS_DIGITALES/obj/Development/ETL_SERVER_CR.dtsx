@@ -11,8 +11,8 @@
   DTS:LocaleID="5130"
   DTS:ObjectName="ETL_SERVER_CR"
   DTS:PackageType="5"
-  DTS:VersionBuild="815"
-  DTS:VersionGUID="{2B9B5F66-173F-49ED-B31D-6B7564B20F13}">
+  DTS:VersionBuild="821"
+  DTS:VersionGUID="{48414330-D7BB-4129-ADD0-4D948A815694}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACtV0AvQ8qKkDbwXj9SqdclAAAAAASAAACgAAAAEAAAADntxSWC1BaqsK3ufqaytmEoAAAA+15gxvv/Tn6PWWhAm8YejSQ+cublSThIT21OSM2fTdfUbO808gUYPhQAAABSq7eYqHbPDnIDa2oHCs5Vtnj4aw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB+4dSeNZSSGkMs+O9/2V87AAAAAASAAACgAAAAEAAAAGdcItB3FNOn8XBKHXPN0ksoAAAA/bzpunFeWmlXY9vc++ppMDpwSvP0wmABV87OXbsBpGFnaQWwVf339xQAAAABJiwaebNXc/Awbf8ZsSDeA/8Lfw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB6R97XnRiz07JcG91J23aLAAAAAASAAACgAAAAEAAAAGlYJDX8/Lo+NCKSMa81SKQ4AAAAT0vRSWBIC1G8+3LweEf6RTaJHIp/gtE/sFfJmoAp7UaV7XWjHV25eibSFsc7EHU0ennKyrUp+J8UAAAAbfOBxbkoOPSXwLTMVRoqskBv/Iw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAXOXgzflLNusDUMwJozx7IAAAAAASAAACgAAAAEAAAAEAdvHZXrj9YwBH27Aeeffw4AAAAmZka5vdYUD/1hPwW1aehVJejlaxMLMpkRZNUW+TwjnOQeNWH1w/vNukrbRHJa9HelKPf8gd7eiAUAAAA6fG9rzvNN4Q4m1RJdRNpbgSlO/c</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -75,7 +75,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADO4tGwywKSaOhXPgpLgnyTAAAAAASAAACgAAAAEAAAAHw9iSLI7lIAObo0+SCJkT8gAAAAuPnqrLHSTN3+1vT6Ebly49iy6EDNGSvN6iebQ8MnowgUAAAAD++hIz6jDJWjuL+bFFhMuslgXak</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABlgPv4PCo1mTGhXpKEkBz8AAAAAASAAACgAAAAEAAAALupNnIJNcfSoQp+JqNUeAYgAAAArKk/fqt/w7JwlhrjUe/9PARpOfDkaBN7TyHIZf+rGJ0UAAAA2Cs/5hhggPY3fPkf/97N7LGSeEI</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -9072,13 +9072,258 @@ WHERE
               version="1">
               <components>
                 <component
-                  refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA"
+                  refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[LEADS_DIG].[VENTAS_SEC_DIGITALES_REG]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[CRCORVKPICDCOAP.BACNET.CORP.REDBAC.com,58523.CANALES.SC-CPP-DWH-TRANS-PBI]"
+                      connectionManagerRefId="Package.ConnectionManagers[CRCORVKPICDCOAP.BACNET.CORP.REDBAC.com,58523.CANALES.SC-CPP-DWH-TRANS-PBI]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="20"
+                          cachedName="CODIGO"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[CODIGO]" />
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PAIS]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="3"
+                          cachedName="PAIS"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PAIS]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAIS]" />
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA]"
+                          cachedDataType="wstr"
+                          cachedLength="10"
+                          cachedName="FECHA"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]" />
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MES]"
+                          cachedDataType="i4"
+                          cachedName="MES"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MES]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[MES]" />
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AÑO]"
+                          cachedDataType="i4"
+                          cachedName="AÑO"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AÑO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[AÑO]" />
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NUM_PRODUCTO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="20"
+                          cachedName="NUM_PRODUCTO"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUM_PRODUCTO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[NUM_PRODUCTO]" />
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRODUCTO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="57"
+                          cachedName="PRODUCTO"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCTO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[PRODUCTO]" />
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANAL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="20"
+                          cachedName="CANAL"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANAL]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANAL]" />
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USUARIO]"
+                          cachedDataType="i4"
+                          cachedName="USUARIO"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[USUARIO]" />
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ORIGEN]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="7"
+                          cachedName="ORIGEN"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORIGEN]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGEN]" />
+                        <inputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FLAG_CLEAN]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="1"
+                          cachedName="FLAG_CLEAN"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FLAG_CLEAN]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[FLAG_CLEAN]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="CODIGO" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PAIS]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="PAIS" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA]"
+                          dataType="dbDate"
+                          name="FECHA" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MES]"
+                          dataType="i4"
+                          name="MES" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AÑO]"
+                          dataType="i4"
+                          name="AÑO" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUM_PRODUCTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="NUM_PRODUCTO" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          name="PRODUCTO" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CANAL" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="USUARIO" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORIGEN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ORIGEN" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FLAG_CLEAN]"
+                          dataType="i4"
+                          name="FLAG_CLEAN" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MONTO_DOLARIZADO]"
+                          dataType="r8"
+                          name="MONTO_DOLARIZADO" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source"
                   componentClassID="Microsoft.OLEDBSource"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
-                  name="SEGUROS COSTA RICA"
+                  name="OLE DB Source"
                   usesDispositions="true"
-                  validateExternalMetadata="False"
                   version="7">
                   <properties>
                     <property
@@ -9501,7 +9746,7 @@ WHERE Enumerador = 1</property>
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Connections[OleDbConnection]"
+                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[CRICPPLSTDWH.BACNET.CORP.REDBAC.COM,3445]"
                       connectionManagerRefId="Package.ConnectionManagers[CRICPPLSTDWH.BACNET.CORP.REDBAC.COM,3445]"
                       description="The OLE DB runtime connection used to access the database."
@@ -9509,513 +9754,272 @@ WHERE Enumerador = 1</property>
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output]"
+                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output]"
                       name="OLE DB Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[CODIGO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[CODIGO]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[CODIGO]"
-                          length="255"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[CODIGO]"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CODIGO]"
+                          length="20"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[CODIGO]"
                           name="CODIGO"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[PAIS]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAIS]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[PAIS]"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PAIS]"
                           length="3"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[PAIS]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAIS]"
                           name="PAIS"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[FECHA]"
-                          dataType="dbDate"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[FECHA]"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
+                          length="10"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
                           name="FECHA"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[MES]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[MES]"
                           dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[MES]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[MES]"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MES]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[MES]"
                           name="MES"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[AÑO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[AÑO]"
                           dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[AÑO]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[AÑO]"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AÑO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[AÑO]"
                           name="AÑO"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[PRODUCTO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[NUM_PRODUCTO]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[PRODUCTO]"
-                          length="10"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[PRODUCTO]"
-                          name="PRODUCTO"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[CANAL]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[CANAL]"
-                          length="3"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[CANAL]"
-                          name="CANAL"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[ORIGEN]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[ORIGEN]"
-                          length="7"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[ORIGEN]"
-                          name="ORIGEN"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[FLAG_CLEAN]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[FLAG_CLEAN]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[FLAG_CLEAN]"
-                          name="FLAG_CLEAN"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[NUM_PRODUCTO]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[NUM_PRODUCTO]"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NUM_PRODUCTO]"
                           length="20"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[NUM_PRODUCTO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[NUM_PRODUCTO]"
                           name="NUM_PRODUCTO"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[USUARIO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[PRODUCTO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PRODUCTO]"
+                          length="57"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[PRODUCTO]"
+                          name="PRODUCTO"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANAL]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANAL]"
+                          length="20"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANAL]"
+                          name="CANAL"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[USUARIO]"
                           dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[USUARIO]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[USUARIO]"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[USUARIO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[USUARIO]"
                           name="USUARIO"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGEN]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ORIGEN]"
+                          length="7"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGEN]"
+                          name="ORIGEN"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[FLAG_CLEAN]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FLAG_CLEAN]"
+                          length="1"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].Columns[FLAG_CLEAN]"
+                          name="FLAG_CLEAN"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[CODIGO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CODIGO]"
                           codePage="1252"
                           dataType="str"
                           length="20"
                           name="CODIGO" />
                         <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[PAIS]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PAIS]"
                           codePage="1252"
                           dataType="str"
                           length="3"
                           name="PAIS" />
                         <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
                           dataType="wstr"
                           length="10"
                           name="FECHA" />
                         <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[MES]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MES]"
                           dataType="i4"
                           name="MES" />
                         <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[AÑO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AÑO]"
                           dataType="i4"
                           name="AÑO" />
                         <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[PRODUCTO]"
-                          codePage="1252"
-                          dataType="str"
-                          length="57"
-                          name="PRODUCTO" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[CANAL]"
-                          codePage="1252"
-                          dataType="str"
-                          length="20"
-                          name="CANAL" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[ORIGEN]"
-                          codePage="1252"
-                          dataType="str"
-                          length="7"
-                          name="ORIGEN" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[FLAG_CLEAN]"
-                          codePage="1252"
-                          dataType="str"
-                          length="1"
-                          name="FLAG_CLEAN" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[NUM_PRODUCTO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NUM_PRODUCTO]"
                           codePage="1252"
                           dataType="str"
                           length="20"
                           name="NUM_PRODUCTO" />
                         <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].ExternalColumns[USUARIO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PRODUCTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="57"
+                          name="PRODUCTO" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          name="CANAL" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[USUARIO]"
                           dataType="i4"
                           name="USUARIO" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ORIGEN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="7"
+                          name="ORIGEN" />
+                        <externalMetadataColumn
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FLAG_CLEAN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          name="FLAG_CLEAN" />
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output]"
+                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output]"
                       isErrorOut="true"
                       name="OLE DB Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[CODIGO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CODIGO]"
                           codePage="1252"
                           dataType="str"
                           length="20"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[CODIGO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CODIGO]"
                           name="CODIGO" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[PAIS]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAIS]"
                           codePage="1252"
                           dataType="str"
                           length="3"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[PAIS]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAIS]"
                           name="PAIS" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[FECHA]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
                           dataType="wstr"
                           length="10"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[FECHA]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
                           name="FECHA" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[MES]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MES]"
                           dataType="i4"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[MES]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MES]"
                           name="MES" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[AÑO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AÑO]"
                           dataType="i4"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[AÑO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AÑO]"
                           name="AÑO" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[NUM_PRODUCTO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NUM_PRODUCTO]"
                           codePage="1252"
                           dataType="str"
                           length="20"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[NUM_PRODUCTO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NUM_PRODUCTO]"
                           name="NUM_PRODUCTO" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[PRODUCTO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PRODUCTO]"
                           codePage="1252"
                           dataType="str"
                           length="57"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[PRODUCTO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PRODUCTO]"
                           name="PRODUCTO" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[CANAL]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANAL]"
                           codePage="1252"
                           dataType="str"
                           length="20"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[CANAL]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANAL]"
                           name="CANAL" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[USUARIO]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[USUARIO]"
                           dataType="i4"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[USUARIO]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[USUARIO]"
                           name="USUARIO" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[ORIGEN]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ORIGEN]"
                           codePage="1252"
                           dataType="str"
                           length="7"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[ORIGEN]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ORIGEN]"
                           name="ORIGEN" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[FLAG_CLEAN]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FLAG_CLEAN]"
                           codePage="1252"
                           dataType="str"
                           length="1"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[FLAG_CLEAN]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FLAG_CLEAN]"
                           name="FLAG_CLEAN" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG"
-                  componentClassID="Microsoft.OLEDBDestination"
-                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-                  description="OLE DB Destination"
-                  name="VENTAS_SEC_DIGITALES_REG"
-                  usesDispositions="true"
-                  validateExternalMetadata="False"
-                  version="4">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[LEADS_DIG].[VENTAS_SEC_DIGITALES_REG]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">3</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepIdentity">false</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepNulls">false</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                      name="FastLoadMaxInsertCommitSize">2147483647</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[CRCORVKPICDCOAP.BACNET.CORP.REDBAC.com,58523.CANALES.SC-CPP-DWH-TRANS-PBI]"
-                      connectionManagerRefId="Package.ConnectionManagers[CRCORVKPICDCOAP.BACNET.CORP.REDBAC.com,58523.CANALES.SC-CPP-DWH-TRANS-PBI]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input]"
-                      errorOrTruncationOperation="Insert"
-                      errorRowDisposition="FailComponent"
-                      hasSideEffects="true"
-                      name="OLE DB Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[CODIGO]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="255"
-                          cachedName="CODIGO"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[CODIGO]" />
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[PAIS]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="3"
-                          cachedName="PAIS"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[PAIS]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[PAIS]" />
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[FECHA]"
-                          cachedDataType="dbDate"
-                          cachedName="FECHA"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[FECHA]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[FECHA]" />
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[MES]"
-                          cachedDataType="i4"
-                          cachedName="MES"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[MES]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[MES]" />
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[AÑO]"
-                          cachedDataType="i4"
-                          cachedName="AÑO"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[AÑO]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[AÑO]" />
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[PRODUCTO]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="10"
-                          cachedName="PRODUCTO"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCTO]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[PRODUCTO]" />
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[CANAL]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="3"
-                          cachedName="CANAL"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[CANAL]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[CANAL]" />
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[ORIGEN]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="7"
-                          cachedName="ORIGEN"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[ORIGEN]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[ORIGEN]" />
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[FLAG_CLEAN]"
-                          cachedDataType="i4"
-                          cachedName="FLAG_CLEAN"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[FLAG_CLEAN]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[FLAG_CLEAN]" />
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[NUM_PRODUCTO]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="20"
-                          cachedName="NUM_PRODUCTO"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[NUM_PRODUCTO]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[NUM_PRODUCTO]" />
-                        <inputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].Columns[USUARIO]"
-                          cachedDataType="i4"
-                          cachedName="USUARIO"
-                          externalMetadataColumnId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO]"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output].Columns[USUARIO]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO]"
-                          codePage="1252"
-                          dataType="str"
-                          length="255"
-                          name="CODIGO" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[PAIS]"
-                          codePage="1252"
-                          dataType="str"
-                          length="10"
-                          name="PAIS" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[FECHA]"
-                          dataType="dbDate"
-                          name="FECHA" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[MES]"
-                          dataType="i4"
-                          name="MES" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[AÑO]"
-                          dataType="i4"
-                          name="AÑO" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[NUM_PRODUCTO]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="NUM_PRODUCTO" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCTO]"
-                          codePage="1252"
-                          dataType="str"
-                          length="150"
-                          name="PRODUCTO" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[CANAL]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="CANAL" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="USUARIO" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[ORIGEN]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="ORIGEN" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[FLAG_CLEAN]"
-                          dataType="i4"
-                          name="FLAG_CLEAN" />
-                        <externalMetadataColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input].ExternalColumns[MONTO_DOLARIZADO]"
-                          dataType="r8"
-                          name="MONTO_DOLARIZADO" />
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Outputs[OLE DB Destination Error Output]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -10027,9 +10031,9 @@ WHERE Enumerador = 1</property>
               <paths>
                 <path
                   refId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL.Paths[OLE DB Source Output]"
-                  endId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG.Inputs[OLE DB Destination Input]"
+                  endId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   name="OLE DB Source Output"
-                  startId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA.Outputs[OLE DB Source Output]" />
+                  startId="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source.Outputs[OLE DB Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -10304,19 +10308,55 @@ WHERE Enumerador = 1</property>
     design-time-name="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="141.333333333334,42.6666666666667"
-          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)\PENSIONES"
-          TopLeft="396.666654845079,96.9999971091748" />
+          Size="248,42.6666666666667"
+          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)\TRASLADO SALDO REVOLUTIVO"
+          TopLeft="677.333313147227,92.6666639049849" />
+        <NodeLayout
+          Size="168,42.6666666666667"
+          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)\Data Conversion 1"
+          TopLeft="720.666645189127,179.333327988784" />
         <NodeLayout
           Size="174.666666666667,42.6666666666667"
           Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)\OLE DB Destination"
           TopLeft="375.333322147529,271.999991893768" />
         <NodeLayout
+          Size="184,42.6666666666667"
+          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)\OLE DB Destination 1"
+          TopLeft="707.333312253158,274.666658480962" />
+        <NodeLayout
           Size="158.666666666667,42.6666666666667"
           Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)\Data Conversion"
           TopLeft="383.33332190911,183.999994516373" />
+        <NodeLayout
+          Size="141.333333333334,42.6666666666667"
+          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)\PENSIONES"
+          TopLeft="396.666654845079,96.9999971091748" />
+        <EdgeLayout
+          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC).Paths[OLE DB Source Output1]"
+          TopLeft="802.999979168177,135.333330571652">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.9999974171322"
+              Start="0,0"
+              End="0,36.4999974171322">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.4999974171322" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC).Paths[OLE DB Source Output]"
           TopLeft="464.999988377095,139.666663775841">
@@ -10336,7 +10376,33 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC).Paths[Data Conversion Output1]"
+          TopLeft="801.999978721142,221.99999465545">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.6666638255118"
+              Start="0,0"
+              End="0,45.1666638255118">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.1666638255118" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10358,63 +10424,9 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="248,42.6666666666667"
-          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)\TRASLADO SALDO REVOLUTIVO"
-          TopLeft="677.333313147227,92.6666639049849" />
-        <NodeLayout
-          Size="168,42.6666666666667"
-          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)\Data Conversion 1"
-          TopLeft="720.666645189127,179.333327988784" />
-        <EdgeLayout
-          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC).Paths[OLE DB Source Output1]"
-          TopLeft="802.999979168177,135.333330571652">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43.9999974171322"
-              Start="0,0"
-              End="0,36.4999974171322">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.4999974171322" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="184,42.6666666666667"
-          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC)\OLE DB Destination 1"
-          TopLeft="707.333312253158,274.666658480962" />
-        <EdgeLayout
-          Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (EC).Paths[Data Conversion Output1]"
-          TopLeft="801.999978721142,221.99999465545">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.6666638255118"
-              Start="0,0"
-              End="0,45.1666638255118">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.1666638255118" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10466,7 +10478,7 @@ WHERE Enumerador = 1</property>
     design-time-name="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (LEADS SIEBEL)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="229.333333333334,42"
           Id="Package\COSTA RICA - LEADS SERVER CR\OBTENER GANADOS SERVER CR (LEADS SIEBEL)\GANADOS SALDO REVOLUTIVO"
@@ -10534,7 +10546,9 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10568,7 +10582,9 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10590,7 +10606,9 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10624,7 +10642,9 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10658,7 +10678,9 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10692,7 +10714,9 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10714,7 +10738,9 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10748,7 +10774,9 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10886,7 +10914,7 @@ WHERE Enumerador = 1</property>
     design-time-name="Package\COSTA RICA - SEC SERVER CR VENTAS\EXTRAFINANCIAMIENTO OLE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="278.666666666667,42"
           Id="Package\COSTA RICA - SEC SERVER CR VENTAS\EXTRAFINANCIAMIENTO OLE\VENTAS_SEC_DIGITALES_REG"
@@ -10914,7 +10942,9 @@ WHERE Enumerador = 1</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10947,27 +10977,27 @@ WHERE Enumerador = 1</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="280.666666666667,42"
-          Id="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG"
-          TopLeft="104.333333293597,139.333333651225" />
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source"
+          TopLeft="494.999977871776,39.684210090591" />
         <NodeLayout
-          Size="284.666666666667,42.6666666666667"
-          Id="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA"
-          TopLeft="104,28" />
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination"
+          TopLeft="482.49997843057,156.684208805954" />
         <EdgeLayout
           Id="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL.Paths[OLE DB Source Output]"
-          TopLeft="245.499999980132,70.6666666666667">
+          TopLeft="571.083311484507,82.3508767572576">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,68.6666669845583"
+              EndConnector="0,74.3333320486964"
               Start="0,0"
-              End="0,61.1666669845583">
+              End="0,66.8333320486964">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,61.1666669845583" />
+                    End="0,66.8333320486964" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10980,7 +11010,7 @@ WHERE Enumerador = 1</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\SEGUROS COSTA RICA">
+    design-time-name="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10988,7 +11018,7 @@ WHERE Enumerador = 1</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\VENTAS_SEC_DIGITALES_REG">
+    design-time-name="Package\COSTA RICA - SEC SERVER CR VENTAS\SEGUROS GENERAL\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

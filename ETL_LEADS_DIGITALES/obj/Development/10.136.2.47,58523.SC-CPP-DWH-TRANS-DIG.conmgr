@@ -10,7 +10,7 @@
       DTS:ConnectionString="Data Source=10.136.2.47,58523;User ID=SC-CPP-DWH-TRANS-DIG;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-ETL_LEADS_DIGITALES-{EA50D63A-369C-4E6E-BA0D-49ACB541D09E}10.136.2.47,58523.SC-CPP-DWH-TRANS-DIG;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAACAAAAAAADZgAAwAAAABAAAABadkHmt7m7OBsmM9QmMqd3AAAAAASAAACgAAAAEAAAAAdCobAmGG/ykmALpOmpeBOIAAAAKx8dQ6lcJjs7SzyktuW8Utqb13wZ4qjj3sxk8MdjN+y1Ef/UtHZYtYyVJNbSg208eYk3pub//eAtElCivQKoNNq9jWowxum1ux31z30+G3DxCXzUwg9I4kMKGWf9h4uH/7ZuXetZxtjuRLihUtZcdYnin6yTuMZ3+KzKh6Iv5WwKJSc34ONnQRQAAABizEwkg/8pm9vG33oaQAD35FHrVg==</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAACAAAAAAADZgAAwAAAABAAAACfL10PbEzt00p19mqzjK8eAAAAAASAAACgAAAAEAAAABin4p8/J0xd+0dCMbuWta2IAAAArP/jod2Kty+fvSUhdCp84Tdc3sdxqqIZgUkbTtQkEjJVvpwdalJjQxlcxOrndv+t2dTD+Pwv1fcQ87ndCSx/Klst8/gbuQ0kNhwYbaqLsNNXNfU9hd6jxstHXaNsBj1G8fQ9+IPOAgW1SsbnZXj4oZm58uhebTVj70kPk5f4Qgq9i7DueeUxZxQAAAAk6q9NiIzEzOBhiDmsIjsewrISWA==</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
