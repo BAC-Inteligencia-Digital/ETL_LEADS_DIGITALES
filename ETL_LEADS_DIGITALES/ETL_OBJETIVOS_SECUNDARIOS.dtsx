@@ -7,12 +7,12 @@
   DTS:CreatorName="COMBCOCR\jose.navarror"
   DTS:DTSID="{49118523-CD10-4997-8227-EBBB9F22ECE3}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5223.0"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="5130"
   DTS:ObjectName="ETL_OBJETIVOS_SECUNDARIOS"
   DTS:PackageType="5"
-  DTS:VersionBuild="830"
-  DTS:VersionGUID="{2AAE87BE-54FC-486E-AEA4-8BECF5C6AE24}">
+  DTS:VersionBuild="831"
+  DTS:VersionGUID="{DA02D321-60DB-42E4-8736-6A8634AE3D33}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,12 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=10.136.2.47,58523;User ID=SC-CPP-DWH-TRANS-DIG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADem3UMaijagXBgGZ0shSWCAAAAAASAAACgAAAAEAAAAOOuPX13QlkCi64bJ9PKt6soAAAA8jjzGNYIPGf4FEjvwW9ISZ8Vm0ceKAD/lyy0+48BJjsrQXPl7cUWtBQAAADRsIRbBgsLHdSqOyifP9bXKuNjEA</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=10.136.2.47,58523;User ID=SC-CPP-DWH-TRANS-DIG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -42,12 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=CRCORVKPICDCOAP.BACNET.CORP.REDBAC.com,58523;User ID=SC-CPP-DWH-TRANS-PBI;Initial Catalog=CANALES;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADCatRIl04SrQtqEZSOmkEUAAAAAASAAACgAAAAEAAAACyaSK/irftw5yK22+mUzrg4AAAA7ZXk5hZa5+LeduRykawz/IDVamHAMO5cN/6UtaeK+FNjQ9g0d4HcdnruYiwSzs5kzP2ZMRE1s4MUAAAA4kRHTtY6dV+Rq+PD79MjB3380Ac</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=CRCORVKPICDCOAP.BACNET.CORP.REDBAC.com,58523;User ID=SC-CPP-DWH-TRANS-PBI;Initial Catalog=CANALES;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -10131,21 +10121,6 @@ WHERE T1.FECHA_MOD = 1;</DTS:VariableValue>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\PRUEBA"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{827015F1-6D16-4910-8585-77ECCAB73B7A}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="PRUEBA"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1" />
-      </DTS:ObjectData>
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -10369,10 +10344,6 @@ WHERE T1.FECHA_MOD = 1;</DTS:VariableValue>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="124,42.6666666666667"
-          Id="Package\PRUEBA"
-          TopLeft="876.249960828574,369.473680153778" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
