@@ -11,8 +11,8 @@
   DTS:LocaleID="5130"
   DTS:ObjectName="ETL_OBJETIVOS_SECUNDARIOS"
   DTS:PackageType="5"
-  DTS:VersionBuild="829"
-  DTS:VersionGUID="{143436F5-7A4D-4A21-AF83-A5FE3B99F2D6}">
+  DTS:VersionBuild="830"
+  DTS:VersionGUID="{2AAE87BE-54FC-486E-AEA4-8BECF5C6AE24}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAS4LTXrmSnqWhi1KRI+XgZAAAAAASAAACgAAAAEAAAACftrViSBDxA3EVj36Wj4FwoAAAA6Tj+yqVPOA1HTn7uZQ+UyP7wYt5q0gLxcXnzmRdxFwe1tAydpQaR6RQAAAAAHVGqAzkUECDP6+cUbWB/toonfw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADem3UMaijagXBgGZ0shSWCAAAAAASAAACgAAAAEAAAAOOuPX13QlkCi64bJ9PKt6soAAAA8jjzGNYIPGf4FEjvwW9ISZ8Vm0ceKAD/lyy0+48BJjsrQXPl7cUWtBQAAADRsIRbBgsLHdSqOyifP9bXKuNjEA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABZpVJzLosaMNAWrSgNj+syAAAAAASAAACgAAAAEAAAAJ17BB8BWvJdt5EPsVZvCfM4AAAAmWj2iGjWbKlOFtFssel5OBbsh+YLM6sm7SQXwbpQASQMH7MVrrEFH6nu+uQFeQZkhlRab/npHAYUAAAA4GbmQ4m8vd122JV4A8zSN4oaTXM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADCatRIl04SrQtqEZSOmkEUAAAAAASAAACgAAAAEAAAACyaSK/irftw5yK22+mUzrg4AAAA7ZXk5hZa5+LeduRykawz/IDVamHAMO5cN/6UtaeK+FNjQ9g0d4HcdnruYiwSzs5kzP2ZMRE1s4MUAAAA4kRHTtY6dV+Rq+PD79MjB3380Ac</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -10131,6 +10131,21 @@ WHERE T1.FECHA_MOD = 1;</DTS:VariableValue>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PRUEBA"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{827015F1-6D16-4910-8585-77ECCAB73B7A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PRUEBA"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -10354,6 +10369,10 @@ WHERE T1.FECHA_MOD = 1;</DTS:VariableValue>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="124,42.6666666666667"
+          Id="Package\PRUEBA"
+          TopLeft="876.249960828574,369.473680153778" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
