@@ -16,7 +16,7 @@
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{456b3799-451e-4cbc-bb9e-82a24e0f2cc1}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">ETL_LEADS_DIGITALES</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">COMCSANCHEZR_P1</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAACAAAAAAADZgAAwAAAABAAAABBPO/bxTwX/HxB9rYI6ECeAAAAAASAAACgAAAAEAAAACBzvjaKvBWYRRXAAovoUyGIAAAAuOipw0dV7klK8QA5anrTNKG3hcu33BDMtekFOCFdLgnMdvn7N98eQaElrMbm6zAWNjCXX28bQVeBAbzBbyxfDe9ASE1LNHi4sunyepgRP0QpnB0ldUqFraEZL1a3dL+IlnwodrzubVN+i6+CwlXSMn1sLGsUNG18jSPuZMhkza0yFx1c6s6TPxQAAADzxTUHMkASYgohKQ0MwXWURuTh+g==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAACAAAAAAADZgAAwAAAABAAAAAXWPEzHotxn7B3IdUBJewmAAAAAASAAACgAAAAEAAAADZZy5m/GYILUUNLz4sVsDOIAAAATbA9b4RaO7lSCTv9QJr3oOffrkxnGQHTv/Loc8PpJrbaAsvejSoXFjwB8c/zFc61sLxQTxgkA+yzh4WHbV3JyTs0ayo4Y+NjwHR54Cfcc7v0CRcw3puGLqtxKj+AJ44iPVECAKpZAQ1mwdCC72kkIYQg8Nu6HJU1LBTcE/vZ0o2448+e/Qf3aBQAAAA1N3P+tx4X5pbglDZJgh2n1xdhFA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -3092,10 +3092,10 @@
                 <SSIS:Property SSIS:Name="Name">ETL_SERVER_CR</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">806</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">821</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{58F9A16F-E2E4-4E3C-A824-26AD3FBB3183}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{48414330-D7BB-4129-ADD0-4D948A815694}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -4164,10 +4164,10 @@
                 <SSIS:Property SSIS:Name="Name">ETL_OBJETIVOS_SECUNDARIOS</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">826</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">830</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{8F896343-62D0-4E9D-9649-70CBC7001F07}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{2AAE87BE-54FC-486E-AEA4-8BECF5C6AE24}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

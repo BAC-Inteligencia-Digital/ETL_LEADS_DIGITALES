@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>ETL_LEADS_DIGITALES</Name>
-    <LastWriteTime>2024-10-07T03:18:22.1954997Z</LastWriteTime>
+    <LastWriteTime>2024-10-17T21:00:59.1775072Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -38,7 +38,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ETL_SERVER_CR.dtsx</Name>
-      <LastWriteTime>2024-10-17T19:38:41.1194165Z</LastWriteTime>
+      <LastWriteTime>2024-10-24T22:36:32.1502998Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -48,7 +48,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ETL_OBJETIVOS_SECUNDARIOS.dtsx</Name>
-      <LastWriteTime>2024-10-15T03:18:25.4392903Z</LastWriteTime>
+      <LastWriteTime>2024-10-17T21:01:01.7025633Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

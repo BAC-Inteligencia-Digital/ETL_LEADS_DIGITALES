@@ -11,8 +11,8 @@
   DTS:LocaleID="5130"
   DTS:ObjectName="ETL_OBJETIVOS_SECUNDARIOS"
   DTS:PackageType="5"
-  DTS:VersionBuild="829"
-  DTS:VersionGUID="{143436F5-7A4D-4A21-AF83-A5FE3B99F2D6}">
+  DTS:VersionBuild="831"
+  DTS:VersionGUID="{DA02D321-60DB-42E4-8736-6A8634AE3D33}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,12 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=10.136.2.47,58523;User ID=SC-CPP-DWH-TRANS-DIG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA2uJ7rYukCBDensPFNToIBAAAAAASAAACgAAAAEAAAABqPzhlYnwjgIq0agn57xgwoAAAA/FILGxGickTaOj4SEq68fOu3747PFytkni4tBGj6nicyb+UU51nWKBQAAADTuds2Cirke13kueH9L7cSXd6zFA</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=10.136.2.47,58523;User ID=SC-CPP-DWH-TRANS-DIG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -42,12 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=CRCORVKPICDCOAP.BACNET.CORP.REDBAC.com,58523;User ID=SC-CPP-DWH-TRANS-PBI;Initial Catalog=CANALES;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAGqMaQRNu4cr9BeJ3/sRxjAAAAAASAAACgAAAAEAAAALGsguHfCo4mDP8+UlsdyNo4AAAAhUnB5YdK5Yzi+jkS9kyUz3EjJuGd7sVWf5yD8xF2wU/z/hd+ZxFeeoakHvY/Rf0HbHo0uvdCjN4UAAAAdOPltyCERNDkOv6DzeVERXv7/H0</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=CRCORVKPICDCOAP.BACNET.CORP.REDBAC.com,58523;User ID=SC-CPP-DWH-TRANS-PBI;Initial Catalog=CANALES;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
