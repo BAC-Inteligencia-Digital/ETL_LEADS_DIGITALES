@@ -11,8 +11,8 @@
   DTS:LocaleID="5130"
   DTS:ObjectName="ETL_LEADS_ENGAGEMENT_CLOUD"
   DTS:PackageType="5"
-  DTS:VersionBuild="805"
-  DTS:VersionGUID="{872A3A96-8937-42E4-818F-C0CB85960493}">
+  DTS:VersionBuild="809"
+  DTS:VersionGUID="{C56F0DD0-5F54-4F14-8A82-2E8B79205B45}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADrIIDhixTYdG/x6FFY7NfUAAAAAASAAACgAAAAEAAAAPYDCMfBPc3Ar+0GxwAqFVUoAAAAcNtiMyQSH1FxoalaUhLiAaYZF0JRpNYOiDDBHtzjArEaMgnF0LT3TRQAAABkMDxg+/yMdjQomzllbKKXB54pgQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADA8vTM7mkCM9A3YDSfcCkeAAAAAASAAACgAAAAEAAAANsU2Sa6pOgovBzJdjIQ+d4oAAAA31GzQNG4iRPPdtL7+FihdsqOCIXMIfYa/IYGXdvyBjxcbSqRP5YPTxQAAAAGvLCLwQUP3J3ogur6ZaDmMMr8tA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA3KLKdCrRbd6tVZQNtIEAFAAAAAASAAACgAAAAEAAAAHk4PqDtjJ4Osbqn1p6Nylg4AAAAJyXVx11C8vHAceomrK5X0joZKtv/DJAyC43wmIhNQm1ad88+thyZUGxNt0LWmhuAswyp+cimmKAUAAAAhaNlLk1SDcjrlTniI8l7SLqfcwE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAjtq5COQGbo6wWmUsrVX3WAAAAAASAAACgAAAAEAAAAEB3CIx7uGd7a1hqHknh5Vg4AAAAi79i3YUEUvk0ahtkwHX8g05340Hu914nsTXtEBXH4Zc2VQ6ChlB4gkRma55DAXs4RU7Z2r6BYhAUAAAAVfCPfnLeXryWzorsZh/GHvAbQBk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -306,7 +306,7 @@ where (YEAR(CreationDate) &gt;= 2023 OR YEAR(LastUpdateDate) &gt;= 2023)
 								'Cuenta Bancaria Nueva','Bono Banhvi','Arreglo de Pago','Alquiler de Auto','FullPOS-RapiBAC','MiPOS-POS','MiPOS-POS-FullPOS',
 								'MiPOS-POS-RapiBAC','Full POS','MiPOS','MiPOS-FullPOS','MiPOS-RapiBAC','POS-RapiBAC','RapiBAC','Activación de Tarjeta','Desembolso Línea de Crédito',
 								'Fideicomiso','Cuenta Bursatil Ingresos','Desarrollo Empresarial',
-								'Mantenimiento de Operaciones ',
+								'Mantenimiento de Operaciones ','FullPay adicional',
 								'Punto de Venta','Mantenimiento del Cliente','Fondo Cerrado',
 								'Fondos de Inversión Digitales',
 								'Tesorería Corporativa Digital',
@@ -2158,7 +2158,8 @@ where (YEAR(CreationDate) &gt;= 2023 OR YEAR(LastUpdateDate) &gt;= 2023)
       AND CreatedBy in ('ESA_OIC_INTEG_USER')
 	  AND FuenteDinamica_c in ('Banca Móvil','Banca en Línea','Web')
 	  AND (Subproducto_c not in ('Subproducto no seleccionado','Ameritransfer','Pago de Servicios','Banca en Línea','Transferencia Internacional','Planilla BAC','Traslado de Valores',
-	                            'Promociones', 'Promociones Fidelización','','Tesorería Corporativa Digital','Banca en Línea ESA','Remesa Virtual','Lobby Empresarial')
+	                            'Promociones', 'Promociones Fidelización','','Tesorería Corporativa Digital','Banca en Línea ESA','Remesa Virtual','Lobby Empresarial','Consolidación de deudas',
+								'Sobregiro','Aumento Límite de Crédito')
 	      AND NOT(Subproducto_c = 'Tarjeta de Crédito' AND Producto_c = 'Campañas Especiales'))</property>
                     <property
                       dataType="System.String"
@@ -4970,7 +4971,7 @@ AND LEN(ID_Oportunidad) IN (6,7)</property>
 	  AND HIJA.Producto_c != ''
 	  AND RTRIM(HIJA.Subproducto_c) NOT IN ('Tarjeta Nueva','Reconsideración OMA','Tarjeta Adicional','Telemedicina','Finiquito','Cambio de Tipo de Tarjeta',
 	                                 'Tarjeta Nueva Digital','Referido Tarjeta Nueva','Planilla Digital','Gastos Médicos ','Reconsideración Tarjeta de Crédito',
-									 'Comercios Afiliados','Crédito Nuevo','Referido Tarjeta Nueva ','Subproducto no seleccionado')</property>
+									 'Comercios Afiliados','Crédito Nuevo','Referido Tarjeta Nueva ','Subproducto no seleccionado','Mantenimiento de Operaciones')</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -9730,6 +9731,8 @@ WHERE NOT(NI.TIPO_PRODUCTO IN ('Tarjeta Nueva','Tarjetas Adicionales','OMAS','Ta
 			 WHEN (Producto_c = 'Comercios Afiliados' and Subproducto_c = 'Afiliación Nueva') THEN 'Afiliación'
 			 WHEN (Subproducto_c = 'Multiproducto' and Tematica_c = 'FORM AFILIACION NUEVA') THEN 'Afiliación'
 			 WHEN (Subproducto_c = 'Multiproducto' and Tematica_c = 'EFORM_REFIGANA_TARJETA_CREDITO') THEN 'Tarjeta Nueva'
+			 WHEN (Subproducto_c = 'Multiproducto' and Tematica_c = 'FORM TARJETA EMPRESARIAL') THEN 'Tarjeta Empresarial'
+			 WHEN (Subproducto_c = 'Multiproducto' and Tematica_c IN ('EFORM_REFIGANA_PRESTAMO_PERSONAL','EFORM_PP_SOSTENIBLE')) THEN 'Préstamos Personales'
 			 WHEN (Subproducto_c = 'Multiproducto' and Tematica_c IN ('EFORM_POLIZADAÑOSAUTOS_EC','EFORM_SEGUROAUTOCONTENIDO_EC')) THEN 'Seguros'
 			 WHEN (Subproducto_c = 'Multiproducto' and Tematica_c IN ('EFORM_REFIGANA_CUENTA_AHORRO','EFORM_REFIGANA_CUENTA_Y_TD')) THEN 'Cuenta Ahorros'
 			 WHEN (Producto_c = 'PYMES' and Subproducto_c = 'Extrafinanciamiento Empresarial') THEN 'Extrafinanciamiento'
@@ -9773,7 +9776,7 @@ WHERE NOT(NI.TIPO_PRODUCTO IN ('Tarjeta Nueva','Tarjetas Adicionales','OMAS','Ta
 			 [LastUpdatedBy] AS USUARIO_MODIFICA,
 			 
 			 'ENGAGEMENT CLOUD' AS ORIGEN,
-             1 AS FLAG_CLEAN
+             1 AS FLAG_CLEAN, Tematica_c
 
 
 from [BULK_ENGAGEMENT_CLOUD_REG].[PAN].[tblOportunidades]
@@ -10007,6 +10010,16 @@ where (YEAR(CreationDate) &gt;= 2023 OR YEAR(LastUpdateDate) &gt;= 2023)
                           lineageId="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\DETALLE LEADS PAN.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
                           name="PAR_ID_OPORTUNIDAD"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\DETALLE LEADS PAN.Outputs[OLE DB Source Output].Columns[Tematica_c]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\DETALLE LEADS PAN.Outputs[OLE DB Source Output].ExternalColumns[Tematica_c]"
+                          length="80"
+                          lineageId="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\DETALLE LEADS PAN.Outputs[OLE DB Source Output].Columns[Tematica_c]"
+                          name="Tematica_c"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -10107,6 +10120,11 @@ where (YEAR(CreationDate) &gt;= 2023 OR YEAR(LastUpdateDate) &gt;= 2023)
                           dataType="str"
                           length="30"
                           name="PAR_ID_OPORTUNIDAD" />
+                        <externalMetadataColumn
+                          refId="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\DETALLE LEADS PAN.Outputs[OLE DB Source Output].ExternalColumns[Tematica_c]"
+                          dataType="wstr"
+                          length="80"
+                          name="Tematica_c" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -10229,6 +10247,12 @@ where (YEAR(CreationDate) &gt;= 2023 OR YEAR(LastUpdateDate) &gt;= 2023)
                           dataType="i4"
                           lineageId="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\DETALLE LEADS PAN.Outputs[OLE DB Source Error Output].Columns[FLAG_CLEAN]"
                           name="FLAG_CLEAN" />
+                        <outputColumn
+                          refId="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\DETALLE LEADS PAN.Outputs[OLE DB Source Error Output].Columns[Tematica_c]"
+                          dataType="wstr"
+                          length="80"
+                          lineageId="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\DETALLE LEADS PAN.Outputs[OLE DB Source Error Output].Columns[Tematica_c]"
+                          name="Tematica_c" />
                         <outputColumn
                           refId="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\DETALLE LEADS PAN.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -11550,18 +11574,18 @@ where (YEAR(CreationDate) &gt;= 2023 OR YEAR(LastUpdateDate) &gt;= 2023)
           TopLeft="683.124969461934,148.473682580315" />
         <EdgeLayout
           Id="Package\GUATEMALA - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS.Paths[OLE DB Source Output1]"
-          TopLeft="761.895803759186,85.0877188324708">
+          TopLeft="761.895803759186,85.0877188324709">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,63.3859637478438"
+              EndConnector="0,63.3859637478441"
               Start="0,0"
-              End="0,55.8859637478438">
+              End="0,55.8859637478441">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.8859637478438" />
+                    End="0,55.8859637478441" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11932,13 +11956,13 @@ where (YEAR(CreationDate) &gt;= 2023 OR YEAR(LastUpdateDate) &gt;= 2023)
           Id="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\DETALLE LEADS PAN"
           TopLeft="472,29" />
         <NodeLayout
-          Size="156,42"
-          Id="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\Data Conversion"
-          TopLeft="490,116" />
-        <NodeLayout
           Size="193.333333333334,42"
           Id="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\LEADS_DIGITALES_REG"
           TopLeft="473,204" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS\Data Conversion"
+          TopLeft="490,116" />
         <EdgeLayout
           Id="Package\PANAMÁ - LEADS ENGAGEMENT CLOUD\OBTENER_DETALLE_LEADS.Paths[OLE DB Source Output]"
           TopLeft="564.5,71">
